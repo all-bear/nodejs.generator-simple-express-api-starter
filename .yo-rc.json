@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Oleh Biriukov",
+      "authorEmail": "ol.biriukov@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}

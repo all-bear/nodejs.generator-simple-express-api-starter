@@ -1,0 +1,54 @@
+{
+  "name": "generator-simple-express-api-starter",
+  "version": "0.0.0",
+  "description": "Create minimal, scalable and simple express based api server with db powered by `mongo` and initialization powered by `phase-control`",
+  "homepage": "https://github.com/all-bear/nodejs.generator-simple-express-api-starter",
+  "author": {
+    "name": "Oleh Biriukov",
+    "email": "ol.biriukov@gmail.com",
+    "url": "https://github.com/all-bear"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "express",
+    "api",
+    "phase-control",
+    "mongo",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "yeoman-test": "^1.7.0",
+    "yeoman-assert": "^3.1.0",
+    "nsp": "^2.8.0",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "prettier": "^1.11.1",
+    "husky": "^0.14.3",
+    "jest": "^22.0.6"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.1",
+    "chalk": "^2.1.0",
+    "yosay": "^2.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "prepublishOnly": "nsp check",
+    "pretest": "eslint .",
+    "precommit": "lint-staged",
+    "test": "jest",
+    "setup-git-hooks": "cp -a ./.git-hooks/* ./.git/hooks/ && chmod +x ./.git/hooks/*",
+    "setup": "npm run setup-git-hooks",
+    "prettier": "./node_modules/prettier/bin-prettier.js --write {*.js,**/*.js}"
+  },
+  "repository": "all-bear/nodejs.generator-simple-express-api-starter",
+  "license": "MIT"
+}
