@@ -16,6 +16,8 @@ Then generate your new project:
 yo simple-express-api-starter
 ```
 
+More info about generated project [README](/generators/app/templates/README.md)
+
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.
